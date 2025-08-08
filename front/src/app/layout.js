@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "B&DM Abogados",
-  description: "Servicios legales",
+  description: "Servicios legales - Estudio jurídico",
 };
 
 export default function RootLayout({ children }) {
@@ -15,8 +15,8 @@ export default function RootLayout({ children }) {
           <Header/>  
           <Nav/>
           {children}
-          <Footer/>
       </body>
+      <Footer/>
     </html>
   );
-}
+};
