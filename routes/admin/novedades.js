@@ -53,7 +53,7 @@ router.get('/eliminar/:id', async (req, res, next) => {
 router.get('/editar/:id', async (req, res, next) => {
   let id = req.params.id;
   let novedad = await novedadesModel.getNovedadById(id);
-  res.render('/admin/editar', {
+  res.render('admin/editar', {
     layout: 'admin/layout',
     novedad
   });
