@@ -1,4 +1,10 @@
-import "@/styles/globals.css";
+//import "@/styles/globals.css";
+import "@/styles/home.css";
+import "@/styles/nosotros.css";
+import "@/styles/galeria.css";
+import "@/styles/novedades.css";
+import "@/styles/contacto.css";
+
 import Nav from "@/components/Nav";
 import Header from '@/components/Header';
 import Footer from "@/components/Footer";
