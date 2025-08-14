@@ -5,6 +5,8 @@ var hbs =require('hbs');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+var cors=require('cors');
+
 require('dotenv').config();
 var session=require('express-session');
 
@@ -15,6 +17,7 @@ var usersRouter = require('./routes/users');
 
 var loginRouter = require('./routes/admin/login');
 var adminRouter= require('./routes/admin/novedades');
+var apiRouter=require('./routes/api');
 
 var app = express();
 
@@ -52,6 +55,7 @@ app.use('/users', usersRouter);
 
 app.use('/admin/login', loginRouter);
 app.use('/admin/novedades', secured, adminRouter);
+app.use('/api', apiRouter);
 
 
 /*ejemplos de consulta*/

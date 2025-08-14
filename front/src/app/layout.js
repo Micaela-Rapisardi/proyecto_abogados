@@ -1,12 +1,12 @@
 //import "@/styles/globals.css";
-import "@/styles/home.css";
+/*import "@/styles/home.css";
 import "@/styles/nosotros.css";
 import "@/styles/galeria.css";
 import "@/styles/novedades.css";
-import "@/styles/contacto.css";
+import "@/styles/contacto.css";*/
 
+import Header from "@/components/Header";
 import Nav from "@/components/Nav";
-import Header from '@/components/Header';
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -21,8 +21,8 @@ export default function RootLayout({ children }) {
           <Header/>  
           <Nav/>
           {children}
+          <Footer/>
       </body>
-      <Footer/>
     </html>
   );
 };

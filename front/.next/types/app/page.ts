@@ -1,4 +1,4 @@
-// File: Z:\SIANT\CARPETAS PERSONALES\Micaela\Cursos\Desarrollo UTN\Diplo_utn\abogados\front\src\app\page.js
+// File: C:\Users\Usuario\Desktop\proyecto_abogados\front\src\app\page.js
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
