@@ -42,7 +42,7 @@ h3{
 }
 
 
-/*.bienvenidos {
+.bienvenidos {
     background-color: rgba(193, 243, 193, 0.250);
     text-align: justify;
     width: 100%;
@@ -71,10 +71,10 @@ h3{
 .card:hover{
     background-color: #e6f4ea; /* un verde claro */
     /*transform: translateY(-5px); /* levanta un poco la tarjeta */
-/*}
+}
     
 
 .columnas{
     display: flex;
     justify-content: space-between;
-} */
+}

@@ -1,15 +1,22 @@
+'use client';
+
 import Link from 'next/link';
+import { usePathname} from 'next/navigation';
 
 export default function Nav() {
+
+  const pathname = usePathname();
+  const isActive = (path)=> path === pathname;
+
   return (
     <nav>    
-      <ul className="navegacion">
-        <li><Link href="/">Home</Link></li>
-        <li><Link href="/nosotros">Nosotros</Link></li>
-        <li><Link href="/galeria">Galeria</Link></li>
-        <li><Link href="/novedades">Novedades</Link></li>
-        <li><Link href="/contacto">Contacto</Link></li>
+      <ul className="holder">
+        <li><Link className={isActive("/") ? 'activo': ''} href="/">Home</Link></li>
+        <li><Link className={isActive("/nosotros") ? 'activo': ''} href="/nosotros">Nosotros</Link></li>
+        <li><Link className={isActive("/galeria") ? 'activo': ''} href="/galeria">Galeria</Link></li>
+        <li><Link className={isActive("/novedades") ? 'activo': ''} href="/novedades">Novedades</Link></li>
+        <li><Link className={isActive("/contacto") ? 'activo': ''} href="/contacto">Contacto</Link></li>
       </ul>
     </nav>
-  );
+  )
 }

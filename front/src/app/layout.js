@@ -1,9 +1,4 @@
-//import "@/styles/globals.css";
-/*import "@/styles/home.css";
-import "@/styles/nosotros.css";
-import "@/styles/galeria.css";
-import "@/styles/novedades.css";
-import "@/styles/contacto.css";*/
+import "@/styles/globals.css";
 
 import Header from "@/components/Header";
 import Nav from "@/components/Nav";
@@ -18,10 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body>
-          <Header/>  
-          <Nav/>
-          {children}
-          <Footer/>
+          <Header />  
+          <Nav />
+          {children} 
+          <Footer />
       </body>
     </html>
   );

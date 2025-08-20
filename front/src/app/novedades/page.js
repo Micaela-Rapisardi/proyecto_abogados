@@ -1,4 +1,4 @@
-//import "@/styles/novedades.css";
+import "@/styles/novedades.css";
 
 import NovedadItem from "@/components/NovedadItem";
 
@@ -8,9 +8,8 @@ export const metadata = {
 };
 
 export default async function Novedades() {
-    const data = await fetch('${process.env.NEXT_APP_API_URL}/api/novedades')
-    //const data = await fetch('http://http://localhost:3000/api/novedades')
-    const novedades =await data.json();
+  const data = await fetch(`${process.env.NEXT_APP_API_URL}/api/novedades`);
+  const novedades = await data.json();
 
     return (
         <section className="holder">
