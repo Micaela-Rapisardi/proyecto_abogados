@@ -7,8 +7,8 @@ export const metadata = {
 
 export default function Galeria() {
     return (
-        <main class="holder">
-        <div class="galeria">
+        <main className="holder">
+        <div className="galeria">
             <h3>Quienes nos eligen...</h3>
             <img src="img/galeria/inmomap.jpg" alt="InmoMap"/>
             <img src="img/galeria/dipaolo.jpg" alt="Di Paolo Propiedades"/>
