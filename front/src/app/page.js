@@ -25,7 +25,7 @@ export default function Home() {
                         <div className="col">
                             <div className="card h-100 text-center p-3">
                                 <div className="icono mb-2">
-                                    <img src="/img/civil.svg" alt="Derecho Civil" width="40"></img>
+                                    <img src="/img/civil.jpg" alt="Derecho Civil" width="40"></img>
                                 </div>
                                 <h5 className="card-title">Derecho Civil</h5>
                                 <p className="card-text">Soluciones legales en conflictos patrimoniales, contratos y
@@ -36,7 +36,7 @@ export default function Home() {
                         <div className="col">
                             <div className="card h-100 text-center p-3">
                                 <div className="icono mb-2">
-                                    <img src="/img/laboral.svg" alt="Derecho Laboral" width="40"></img>
+                                    <img src="/img/laboral.jpg" alt="Derecho Laboral" width="40"></img>
                                 </div>
                                 <h5 className="card-title">Derecho Laboral</h5>
                                 <p className="card-text">Defendemos tus derechos como trabajador ante despidos, accidentes y
@@ -47,7 +47,7 @@ export default function Home() {
                         <div className="col">
                             <div className="card h-100 text-center p-3">
                                 <div className="icono mb-2">
-                                    <img src="/img/suseciones.svg" alt="Sucesiones" width="40"></img>
+                                    <img src="/img/suseciones.jpg" alt="Sucesiones" width="40"></img>
                                 </div>
                                 <h5 className="card-title">Sucesiones</h5>
                                 <p className="card-text">Asesoramos con claridad en cada paso del proceso sucesorio.</p>
@@ -57,7 +57,7 @@ export default function Home() {
                         <div className="col">
                             <div className="card h-100 text-center p-3">
                                 <div className="icono mb-2">
-                                    <img src="/img/siniestro transito.svg" alt="Siniestros de Tránsito"
+                                    <img src="/img/siniestro transito.jpg" alt="Siniestros de Tránsito"
                                         width="40"></img>
                                 </div>
                                 <h5 className="card-title">Siniestros de Tránsito</h5>
@@ -69,7 +69,7 @@ export default function Home() {
                         <div className="col">
                             <div className="card h-100 text-center p-3">
                                 <div className="icono mb-2">
-                                    <img src="/img/danos.svg" alt="Daños" width="40"></img>
+                                    <img src="/img/danos.jpg" alt="Daños" width="40"></img>
                                 </div>
                                 <h5 className="card-title">Daños</h5>
                                 <p className="card-text">Acciones legales por daños y perjuicios sufridos en distintos
@@ -80,7 +80,7 @@ export default function Home() {
                         <div className="col">
                             <div className="card h-100 text-center p-3">
                                 <div className="icono mb-2">
-                                    <img src="/img/ejecuciones.svg" alt="Ejecuciones" width="40"></img>
+                                    <img src="/img/ejecuciones.jpg" alt="Ejecuciones" width="40"></img>
                                 </div>
                                 <h5 className="card-title">Ejecuciones</h5>
                                 <p className="card-text">Recuperación de créditos mediante juicios ejecutivos y vías legales
@@ -91,7 +91,7 @@ export default function Home() {
                         <div className="col">
                             <div className="card h-100 text-center p-3">
                                 <div className="icono mb-2">
-                                    <img src="/img/desalojo.svg" alt="Desalojos" width="40"></img>
+                                    <img src="/img/desalojo.jpg" alt="Desalojos" width="40"></img>
                                 </div>
                                 <h5 className="card-title">Desalojos</h5>
                                 <p className="card-text">Acciones legales para recuperar inmuebles ocupados o impagos.</p>
@@ -101,7 +101,7 @@ export default function Home() {
                         <div className="col">
                             <div className="card h-100 text-center p-3">
                                 <div className="icono mb-2">
-                                    <img src="/img/reajustes.svg" alt="Reajustes" width="40"></img>
+                                    <img src="/img/reajustes.jpg" alt="Reajustes" width="40"></img>
                                 </div>
                                 <h5 className="card-title">Reajustes Previsionales</h5>
                                 <p className="card-text">Gestionamos reajustes de haberes jubilatorios y reconocimiento de

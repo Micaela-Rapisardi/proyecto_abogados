@@ -3,9 +3,9 @@ export default function ContactoForm() {
         <main class="holder contacto">
         <div>
             <h3>Dejanos tu consulta</h3>
-            <form action="" method="" class="formulario">
+            <form action="" method="" className="formulario">
                 <p>
-                    <label for="nombre">Apellido y nombre</label>
+                    <label htmlFor="nombre">Apellido y nombre</label>
                     <input type="text" id="name"/>
                 </p>
                 <p>
@@ -20,7 +20,7 @@ export default function ContactoForm() {
                     <label for="mensaje">Mensaje</label>
                     <textarea name=""></textarea>
                 </p>
-                <p class="acciones"><input type="submit" value="Enviar"/></p>
+                <p className="acciones"><input type="submit" value="Enviar"/></p>
             </form>
         </div>
         

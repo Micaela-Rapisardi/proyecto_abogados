@@ -1,49 +1,41 @@
-<div class="holder">
-    <img src="/img/nuevologo25.png" width="200" alt="B&DM Abogados">
-    <h1>Estudio Jurídico</h1>
-</div>
-
 <div class="container" style="margin-top:50px;">
     <div class="row">
-        <p class="text-end">Hola {{persona}} <a class="btn btn-danger" href="/admin/login/logout">Cerrar Sesión <i
-                    class="fas fa-sign-out-alt"></i></a></p>
+        <p class="text-end">
+            Hola {{persona}}
+            <a class="btn btn-danger" href="/admin/login/logout">
+                Cerrar Sesión <i class="fas fa-sign-out-alt"></i>
+            </a>
+        </p>
     </div>
-</div>
 
-<div class="row">
-    <div class="col-7">
-        <h3>Novedades</h3>
+    <div class="row mb-3">
+        <div class="col-7">
+            <h2>Novedades</h2>
+        </div>
+        <div class="col-5 text-end">
+            <a class="btn btn-success" href="/admin/novedades/agregar">
+                <i class="fa fa-plus" aria-hidden="true"></i> Nueva
+            </a>
+        </div>
     </div>
-    <div class="col-5 text-end">
-        <a class="btn btn-success" href="/admin/novedades/agregar"><i class="fa fa-plus" aria-hidden="true"></i>Nueva</a>
-    </div>
-</div>
 
-<div class="row">
-    <div class="col">
-        <table class="table">
-            <thead>
-                <tr class="table-dark">
-                    <th scope="col">#</th>
-                    <th scope="col">Título</th>
-                    <th scope="col">Subtítulo</th>
-                    <th class="text-end">Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-
-                {{#each novedades}}
-                <tr>
-                    <th scope="row">{{id}}</th>
-                    <td>{{titulo}}</td>
-                    <td>{{subtitulo}}</td>
-                    <td class="text-end">
-                        <a class="btn btn-secondary" href="/admin/novedades/editar/{{id}}"> <i class="fa fa-pencil" aria-hidden="true"></i></a>
-                        <a class="btn btn-secondary" href="/admin/novedades/eliminar/{{id}}"> <i class="fa fa-trash" aria-hidden="true"></i></a>
-                    </td>
-                </tr>
-                {{/each}}
-            </tbody>
-        </table>
+    <div class="list-group">
+        {{#each novedades}}
+        <div class="list-group-item border-0 border-bottom py-3">
+            <h5 class="novedad-titulo">{{titulo}}</h5>
+            <h6 class="novedad-subtitulo">{{subtitulo}}</h6>
+            <p class="novedad-cuerpo">
+                {{truncate cuerpo 250}}
+            </p>
+            <div class="text-end">
+                <a class="btn btn-sm btn-outline-verde" href="/admin/novedades/editar/{{id}}">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-sm btn-outline-danger" href="/admin/novedades/eliminar/{{id}}">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        {{/each}}
     </div>
 </div>

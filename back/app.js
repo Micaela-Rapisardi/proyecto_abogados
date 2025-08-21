@@ -1,3 +1,4 @@
+require('dotenv').config();
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -7,7 +8,6 @@ var logger = require('morgan');
 
 var cors=require('cors');
 
-require('dotenv').config();
 var session=require('express-session');
 
 var pool= require('./models/bd');
@@ -15,6 +15,7 @@ var pool= require('./models/bd');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+var adminIndexRouter = require('./routes/admin/index');
 var loginRouter = require('./routes/admin/login');
 var adminRouter= require('./routes/admin/novedades');
 var apiRouter=require('./routes/api');
@@ -25,11 +26,19 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
+hbs.registerHelper('truncate', function (str, len) {
+  if (str && str.length > len) {
+    return str.substring(0, len) + '...';
+  }
+  return str;
+});
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'front/public')));
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(session({
   secret:'Pw2026micaela',
@@ -37,7 +46,7 @@ app.use(session({
   saveUninitialized:true
 }))
 
-secured=async(req, res, next) => {
+const secured = async(req, res, next) => {
   try{
     console.log(req.session.id_usuario);
     if (req.session.id_usuario) {
@@ -55,6 +64,9 @@ app.use('/users', usersRouter);
 
 app.use('/admin/login', loginRouter);
 app.use('/admin/novedades', secured, adminRouter);
+
+app.use('/admin', secured, adminIndexRouter);
+
 app.use('/api', apiRouter);
 
 

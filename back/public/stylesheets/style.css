@@ -1,0 +1,82 @@
+/* Reset general */
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h2 {
+  color: #104434;
+  font-size: 22px;
+  font-style: italic;
+}
+
+/* Header */
+header {
+  background-color: #104434;
+  color: white;
+  padding: 10px 20px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  margin-left: 15px;
+}
+
+/* Main */
+main {
+  padding: 20px;
+  min-height: 70vh;
+}
+
+/* Footer */
+footer {
+  background-color: #104434;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: #104434;
+  border-color: #104434;
+}
+
+.btn-primary:hover {
+  background-color: #0d3529;
+  border-color: #0d3529;
+}
+
+.btn-outline-verde {
+    color: #104434;
+    border-color: #104434;
+}
+
+  .btn-outline-verde:hover {
+    background-color: #104434;
+    color: #fff;
+}
+
+/* Novedades */
+.novedad-titulo {
+    font-size: 16px;
+    font-weight: bold;
+    color: #104434;
+    margin-bottom: 4px;
+  }
+
+  .novedad-subtitulo {
+    font-size: 14px;
+    color: #104434;
+    margin-bottom: 6px;
+  }
+
+  .novedad-cuerpo {
+    font-size: 11px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 8px;
+  }
