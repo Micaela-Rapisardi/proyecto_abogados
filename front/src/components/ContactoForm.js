@@ -1,6 +1,6 @@
 'use client'
 
-import React, {useState} from 'react';
+import {useState} from 'react';
 
 export default function ContactoForm({postUrl}) {
         
@@ -18,9 +18,9 @@ export default function ContactoForm({postUrl}) {
         const handleChange = e => {
             const { name, value } = e.target; 
             setFormData(oldData => ({
-            ...oldData,
-            [name]: value
-}));
+                ...oldData,
+                [name]: value
+            }));
         }
 
         const handleSubmit= async e => {
@@ -50,7 +50,7 @@ export default function ContactoForm({postUrl}) {
         <main className="holder contacto">
         <div>
            
-            <form action="" method="" className="formulario" onSubmit={handleSubmit}>
+            <form action="/contacto" method="post" className="formulario" onSubmit={handleSubmit}>
                 <p>
                     <label htmlFor="nombre">Apellido y nombre</label>
                     <input type="text" name="nombre" value={formData.nombre} onChange={handleChange}/>
@@ -67,10 +67,10 @@ export default function ContactoForm({postUrl}) {
                     <label htmlFor="mensaje">Mensaje</label>
                     <textarea name="mensaje" value={formData.mensaje} onChange={handleChange}></textarea>
                 </p>
-                {sending ? <p>Enviando...</p> : null}
-                {msg ? <p>{msg}</p> : null}
                 <p className="acciones"><input type="submit" value="Enviar"/></p>
             </form>
+            {sending ? <p>Enviando...</p> : null}
+            {msg ? <p>{msg}</p> : null}
         </div>
         
         <div className="datos">

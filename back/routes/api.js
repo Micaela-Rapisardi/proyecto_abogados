@@ -10,6 +10,7 @@ router.get('/novedades', async function (req, res, next) {
     res.json(novedades);
 });
 
+//enviar formulario de contacto
 router.post('/contacto', async (req, res) => { 
     const mail = {
         to: 'rapisardimicaela.data@gmail.com', 
@@ -27,7 +28,6 @@ router.post('/contacto', async (req, res) => {
         }
 
     }); // cierra transp
-
 
     await transport.sendMail(mail)
 

@@ -13,7 +13,8 @@ export default function Contacto() {
             <div>
                 <h3>Dejanos tu consulta</h3>
 
-                <ContactoForm postUrl="http://localhost:3000/api/contacto"/>
+                {/* <ContactoForm postUrl={`$(process.env.NEXT_APP_API_URL)/api/contacto`}/> */}
+                <ContactoForm postUrl={`${process.env.NEXT_PUBLIC_API_URL}/api/contacto`} />
 
             </div>
         </main>
