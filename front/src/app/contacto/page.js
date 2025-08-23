@@ -9,11 +9,11 @@ export const metadata = {
 
 export default function Contacto() {
     return (
-        <main class="holder contacto">
+        <main className="holder contacto">
             <div>
                 <h3>Dejanos tu consulta</h3>
 
-                <ContactoForm />
+                <ContactoForm postUrl="http://localhost:3000/api/contacto"/>
 
             </div>
         </main>
