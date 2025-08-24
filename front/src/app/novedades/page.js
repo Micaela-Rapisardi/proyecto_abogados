@@ -10,7 +10,7 @@ export default async function Novedades() {
   const data = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/novedades`);
   const novedades = await data.json();
 
-  // función para limitar a 200 palabras
+  // limitar el cuerpo a 100 palabras
   const limitarTexto = (texto, limitePalabras) => {
       const palabras = texto.split(" ");
       if (palabras.length <= limitePalabras) return texto;
@@ -26,7 +26,7 @@ export default async function Novedades() {
                 key={item.id}
                 titulo={item.titulo}
                 subtitulo={item.subtitulo}
-                cuerpo={limitarTexto(item.cuerpo, 200)}
+                cuerpo={limitarTexto(item.cuerpo, 100)}
             />
         ))}
     </section>
