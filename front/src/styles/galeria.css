@@ -1,3 +1,7 @@
+h4 {
+    color: #166d53;
+}
+
 .galeria{
     display:inline-table;
     flex-wrap: wrap;

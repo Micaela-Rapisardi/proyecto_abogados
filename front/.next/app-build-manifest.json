@@ -15,7 +15,6 @@
     "/galeria/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/galeria/page.css",
       "static/chunks/app/galeria/page.js"
     ],
     "/novedades/page": [
@@ -23,12 +22,6 @@
       "static/chunks/main-app.js",
       "static/css/app/novedades/page.css",
       "static/chunks/app/novedades/page.js"
-    ],
-    "/contacto/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/contacto/page.css",
-      "static/chunks/app/contacto/page.js"
     ]
   }
 }

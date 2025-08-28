@@ -5,10 +5,6 @@ var nodemailer=require('nodemailer');
 
 
 // listar novedades
-// router.get('/novedades', async function (req, res, next) {
-//         let novedades=await novedadesModel.getNovedades();
-//         res.json(novedades);
-//     })
 
 router.get('/novedades', async function (req, res, next) {
     try {
@@ -50,33 +46,5 @@ router.post('/contacto', async (req, res) => {
         res.status(500).json({ error: true, message: 'Error al enviar el mensaje' });
     }
 });
-
-// router.post('/contacto', async (req, res) => { 
-//     try { 
-//         const mail = {
-//             to: 'rapisardimicaela.data@gmail.com', 
-//             subject: 'Contacto web',
-//             html: `${req.body.nombre} se contacto a traves de la web y quiere más informacion a este correo: ${req.body.email} <br> Además, hizo el siguiente comentario: ${req.body.mensaje} <br> Su tel es:
-//             ${req.body.telefono}`
-//         }
-//     }    
-
-//         const transport = nodemailer.createTransport({ 
-//             host: process.env.SMTP_HOST, 
-//             port: process.env.SMTP_PORT, 
-//             auth:{
-//                 user: process.env.SMTP_USER,
-//                 pass: process.env.SMTP_PASS
-//             }
-
-//         }); // cierra transp    
-
-//     await transport.sendMail(mail)
-
-//     res.status(201).json({
-//         error: false,
-//         message: 'Mensaje enviado'
-//     });
-// });
 
 module.exports=router;

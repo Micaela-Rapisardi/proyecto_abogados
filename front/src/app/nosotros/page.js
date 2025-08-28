@@ -11,8 +11,9 @@ export default function Nosotros() {
     <main className="holder">
         <div className="historia">
             <h3>Historia</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quod fugit officia dignissimos quis tempore exercitationem hic enim vitae ut. Porro iusto, aliquid facere officiis delectus sequi nulla temporibus dolorum.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, mollitia vero explicabo doloremque quidem rem cum assumenda accusantium vitae facilis ipsum blanditiis itaque magnam saepe delectus sequi ex! Aspernatur, necessitatibus.</p>
+            <p>B&DM Abogados nació con el objetivo de acompañar a las personas en la resolución de conflictos legales de manera profesional y humana.</p>
+            <p>Desde nuestros inicios, hemos trabajado con responsabilidad y dedicación, construyendo una relación de confianza con nuestros clientes y con la comunidad de Villa Bosch.</p>
+            <p>Nos especializamos en diferentes ramas del derecho, para brindarte un asesoramiento integral y personalizado</p>
         </div>
         <div className="staff">
             <h3>Staff</h3>
